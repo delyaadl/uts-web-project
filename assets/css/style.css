@@ -18,6 +18,7 @@ a:link {
 }
 
 /* == MAIN NAVIGATION == */
+
 .navbar-override {
     background-color: rgb(50, 68, 88);
 }
@@ -50,10 +51,10 @@ a:link {
     letter-spacing: 1px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -73,7 +74,6 @@ a:link {
 
 }
 
-
 .nav-2 .dropdown-menu {
     padding: 5px;
 }
@@ -85,6 +85,192 @@ a:link {
 
 .nav-2 > li:last-child .dropdown-menu {
     left: -100%;
+}
+
+/* == MAIN-BANNER == */
+
+#main-banner {
+    margin: 40px 0;
+}
+
+#main-banner .carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#main-banner .col-wrt {
+    background: linear-gradient(rgb(60, 65, 126) 45%, #0f5a51);
+    margin-left: -15px;
+    padding: 30px 50px 70px 50px;
+    text-align: justify;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.col-wrt p {
+    margin: 25px 0 0 0;
+}
+
+.col-wrt .disc-desc {
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+#main-banner .col-wrt .morebtn {
+    position: absolute;
+    bottom: 20%;
+    color: white;
+}
+
+.morebtn ion-icon {
+    position: absolute;
+    left: 110%;
+    bottom: 10%;
+}
+
+#main-banner .col-wrt .morebtn:hover {
+    color: #bcbcbc;
+    transition: color 0.3s;
+}
+
+#main-banner .carousel-control-prev, .carousel-control-next {
+    height: 30px;
+    position: absolute;
+    top: 85%;
+}
+
+#main-banner .carousel-control-prev {
+    left: 63.5%;
+}
+
+#main-banner .carousel-control-next {
+    right: 15%;
+}
+
+#main-banner .carousel-indicators {
+    margin: 0;
+    left: 80%;
+    top: 85%;
+}
+
+#main-banner .carousel-indicators > li {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}
+
+#main-banner .carousel-indicators > .active {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    transition: width 0.3s, height 0.3s;
+}
+
+
+/* == SPECIAL OFFERS == */
+.section-title {
+    margin: 50px 0 20px 0;
+    font-size: 24px;
+}
+
+.special-offer .col-md {
+    margin: 0 10px;
+}
+
+.special-offer img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.special-offer .col-2-item img{
+    height: 133px;
+    object-fit: cover;
+}
+
+.game-desc1 {
+    background-color: rgb(50,60,88);
+    display: block;
+    color: white;
+    padding: 20px;
+    height: 33.3%;
+}
+
+.game-desc {
+    background-color: rgb(50,60,88);
+    display: block;
+    color: white;
+    padding: 20px;
+}
+
+/* == FREE GAMES BANNER == */
+
+.free-games {
+    margin: 0 auto 100px;
+}
+
+.title2 {
+    margin-top: 100px;
+}
+
+.free-games .col-md:first-of-type {
+    padding: 50px;
+}
+
+.free-games .col-md {
+    background: linear-gradient(#40406f 55%, #581a1a);
+    color: white;
+
+}
+
+.free-games img {
+    width: 130%;
+    margin-top: -10%;
+    margin-left: -70px;
+    object-fit: cover;
+}
+
+/* == NEW RELEASE == */
+
+.new-release .col-md {
+    margin: 0 10px;
+}
+
+.new-release img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.new-release .game-desc {
+    display: block;
+    padding: 20px 20px 20px 0;
+    background-color: transparent;
+    color: black;
+}
+
+/* == GENRE BROWSE == */
+
+.genre-section .row:first-of-type {
+    border: 1px solid red;
+}
+
+.genre-section a {
+    margin: 5px 10px;
+    padding: 10px;
+    width: 200px;
+    background: linear-gradient(45deg, #414141, #454565);
+    border-radius: 5px;
+    color: white;
+}
+
+.genre-section .row:last-of-type {
+    margin-bottom: 100px;
 }
 
 
