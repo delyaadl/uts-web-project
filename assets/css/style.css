@@ -93,8 +93,13 @@ a:link {
     margin: 40px 0;
 }
 
-#main-banner .carousel-item img {
+#main-banner .col-img {
+    padding: 0;
+}
+
+#main-banner .col-img img {
     width: 100%;
+    margin-left: 15px;
     height: 350px;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -104,10 +109,15 @@ a:link {
 #main-banner .col-wrt {
     background: linear-gradient(rgb(60, 65, 126) 45%, #0f5a51);
     margin-left: -15px;
+    margin-right: 15px;
     padding: 30px 50px 70px 50px;
     text-align: justify;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.col-wrt a {
     color: white;
 }
 
@@ -231,7 +241,8 @@ a:link {
 .special-offer .price .to-price {
     font-size: 16px;
     padding: 0 10px;
-    color: #b6acff;
+    color: orange;
+    font-weight: 500;
 }
 
 /* == FREE GAMES BANNER == */
@@ -261,14 +272,14 @@ a:link {
 }
 
 .free-games a {
-    background-color: #7474d8;
+    background-color: rgba(116, 116, 216, 0.46);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border-radius: 10px;
 }
 
 .free-games a:hover {
-    background-color: #48489a;
+    background-color: rgba(155, 148, 183, 0.52);
     transition: background-color 0.3s;
 }
 
@@ -281,8 +292,13 @@ a:link {
 
 /* == NEW RELEASE == */
 
-.new-release .col-md {
+.new-release .new-game {
     margin: 0 10px;
+}
+
+.new-release .new-game:hover {
+    box-shadow: 0 0 10px 3px #c6c6c6;
+    transition: box-shadow 0.3s;
 }
 
 .new-release img {
@@ -291,27 +307,10 @@ a:link {
     object-fit: cover;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 250px;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(224, 224, 224, 0.62);
-}
-
-.row-img:hover .overlay {
-    opacity: 1;
-}
-
 .new-release .game-desc {
     display: block;
-    padding: 20px 20px 20px 0;
-    background-color: transparent;
+    padding: 15px 20px 0 15px;
+    background-color: #f7f7f7;
     color: black;
 }
 
@@ -322,29 +321,226 @@ a:link {
 }
 
 .new-release .price {
+    position: absolute;
     font-size: 18px;
+    color: orange;
+    bottom: 0;
 }
 
 
 /* == GENRE BROWSE == */
 
-.genre-section a {
-    margin: 5px 10px;
-    padding: 10px;
-    width: 200px;
-    background: linear-gradient(45deg, #414141, #454565);
-    border-radius: 5px;
-    color: white;
+.genre-section .row {
+    margin: 0 auto;
 }
 
-.genre-section a:hover {
-    background: linear-gradient(45deg, #626262, #626290);
+.genre-section a {
+    margin:  10px;
+    padding: 22px;
+    width: 200px;
+    border-radius: 5px;
+    color: #7c7c7c;
+}
+
+.genre-section .rpg {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/rpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .action {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/action.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .adventure {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/adventure.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .casual {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/casual.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .indie {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/indie.jpg);
+    background-size: cover;
+    background-position: center ;
+}
+
+.genre-section .mmorpg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/mmorpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .simulation {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/simulation.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .racing {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/racing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .sports {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/sports.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.genre-section .strategy {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/strategy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.genre-section .rpg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/rpg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s , color 0.3s;
+}
+
+.genre-section .action:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/action.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s , color 0.3s;
+}
+
+.genre-section .adventure:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/adventure.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s , color 0.3s;
+}
+
+.genre-section .casual:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/casual.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .indie:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/indie.jpg);
+    background-size: cover;
+    background-position: center ;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .mmorpg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/mmorpg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .simulation:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/simulation.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .racing:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/racing.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .sports:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/sports.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
+}
+
+.genre-section .strategy:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/strategy.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background .3s ease, color 0.3s;
 }
 
 .genre-section .row:last-of-type {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
+/* == MORE FROM US == */
+
+.section-title a {
+    color: #8989cc;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.section-title a:hover {
+    text-decoration: underline;
+}
+
+.more-from {
+    margin: 40px 0;
+}
+
+.more-from .more-game {
+    margin: 0 10px;
+}
+
+.more-from .more-game:hover {
+    box-shadow: 0 0 10px 3px #c6c6c6;
+    transition: box-shadow 0.3s;
+}
+
+.more-from img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.more-from .game-desc {
+    display: block;
+    padding: 15px 20px 0 15px;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+.more-from .publisher {
+    font-size: 12px;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+.more-from .price {
+    position: absolute;
+    font-size: 18px;
+    color: orange;
+    bottom: 0;
+}
+
+.more-from:last-of-type {
+    margin-bottom: 100px;
+}
 
 /* == FOOTER == */
 .card-footer {
