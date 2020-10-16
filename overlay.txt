@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     height: 250px;
-    width: 100%;
+    width: 90%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 52, 52, 0.62);
@@ -61,7 +61,7 @@
 }
 
 .more-game .overlay a:hover {
-    background-color: #ff8000;
+    background-color: #ff90%0;
 }
 
 .more-game .overlay p:hover {
