@@ -91,6 +91,8 @@ a:link {
 
 #main-banner {
     margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px lightgray;
 }
 
 #main-banner .col-img {
@@ -366,13 +368,13 @@ a:link {
     background-position: center;
 }
 
-.genre-section .indie {
+.genre-section .fps {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/indie.jpg);
     background-size: cover;
     background-position: center ;
 }
 
-.genre-section .mmorpg:hover {
+.genre-section .mmorpg {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/mmorpg.jpg);
     background-size: cover;
     background-position: center;
@@ -435,7 +437,7 @@ a:link {
     transition: background .3s ease, color 0.3s;
 }
 
-.genre-section .indie:hover {
+.genre-section .fps:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.6)), url(../img/indie.jpg);
     background-size: cover;
     background-position: center ;
