@@ -118,12 +118,51 @@ a:link {
     padding: 5px;
 }
 
-.nav-2 input {
-    width: 200px;
-    outline: none;
+form.search {
+    width: 250px;
 }
 
-.nav-2 > li:last-child .dropdown-menu {
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.search .searchBtn {
+    float: left;
+    width: 20%;
+    padding: 5px 10px;
+    background: #3b566c;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search .searchBtn:hover {
+    background: #7096b5;
+    transition: background 0.3s;
+}
+
+form.search .searchBtn ion-icon {
+    margin: 0;
+    padding: 0;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-2 > li:first-of-type .dropdown-menu {
+    left: -100%;
+}
+
+.nav-2 > li:last-of-type .dropdown-menu {
     left: -100%;
 }
 
@@ -291,7 +330,7 @@ a:link {
 
 .free-games {    
     background: linear-gradient(#40406f 55%, #581a1a);
-    margin: 0 auto 100px;
+    margin: 30px auto 100px;
     border-radius: 10px;
     color: white;
 }
@@ -305,7 +344,7 @@ a:link {
 }
 
 .free-games h3 {
-    font-size: 36px;
+    font-size: 36px;    
 }
 
 .free-games p {
@@ -666,4 +705,30 @@ a:link {
     color: #d1d1d1;
     padding: 0 10%;
     font-size: 90%;
+}
+
+
+/* ------------------------------------ */
+/* ANIMATIONS */
+/* ------------------------------------ */
+
+.js--carousel,
+.js--new-release,
+.js--more-from,
+.js--genre-section,
+.js--special-offer {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--free-game {
+    animation-duration: 1s;
+}
+
+.js--carousel.animated,
+.js--new-release.animated
+.js--more-from.animated,
+.js--genre-section.animated,
+.js--special-offer.animated {
+    opacity: 1;
 }

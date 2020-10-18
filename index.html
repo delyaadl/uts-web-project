@@ -12,6 +12,7 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/media.css">
     </head>
     <body>
@@ -44,7 +45,10 @@
                                 <li class="nav-item dropdown">
                                     <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: 0;"><ion-icon name="search-outline"></ion-icon></button>
                                     <div class="dropdown-menu">
-                                        <input type="text" class="dropdown-item" placeholder="Search">
+                                        <form class="search" action="browse2.html">
+                                            <input type="text" class="dropdown-item" placeholder="Search">
+                                            <button type="submit" class="searchBtn"><ion-icon name="search-outline"></ion-icon></button>
+                                        </form>
                                     </div>
                                 </li>
                                 <li class="nav-item" >
@@ -67,7 +71,7 @@
         <main>
             <div class="container-fluid">
                 <div class="container">
-                    <div id="main-banner" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div id="main-banner" class="carousel slide carousel-fade js--carousel" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#main-banner" data-slide-to="0" class="active"></li>
                             <li data-target="#main-banner" data-slide-to="1"></li>
@@ -77,11 +81,11 @@
                             <div class="carousel-item active">
                                  <div class="row">
                                     <div class="col-lg-8 col-img">
-                                        <a href="#"><img src="assets/img/banner1.png" class="d-block w-100" alt="Among Us"></a>
+                                        <a href="disgaea.html"><img src="assets/img/banner1.png" class="d-block w-100" alt="Among Us"></a>
                                     </div>
                                     
                                     <div class="col-lg-4 col-wrt">
-                                        <a href="#"><p class="disc-desc">AVALAIBLE NOW</p>
+                                        <a href="disgaea.html"><p class="disc-desc">AVALAIBLE NOW</p>
                                         <h2>Among Us</h2>
                                         <p>An online and local party game of teamwork and betrayal for 4-10 players...in space!</p></a>
                                         <a class="morebtn" href="login.html">Buy now <ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
@@ -91,11 +95,11 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-8 col-img">
-                                        <a href="#"><img src="assets/img/banner2.jpg" class="d-block w-100" alt="The Sims 4"></a>
+                                        <a href="disgaea.html"><img src="assets/img/banner2.jpg" class="d-block w-100" alt="The Sims 4"></a>
                                     </div>
                                     
                                     <div class="col-lg-4 col-wrt">
-                                        <a href="#">
+                                        <a href="disgaea.html">
                                             <p class="disc-desc">GET 75% OFF</p>
                                             <h2>The Sims 4</h2>
                                             <p>Unleash your imagination and create a world of Sims that’s wholly unique. Explore and customize every [...]</p></a>
@@ -106,15 +110,15 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-8 col-img">
-                                        <a href="#"><img src="assets/img/banner3.jpg" class="d-block w-100" alt="..."></a>
+                                        <a href="disgaea.html"><img src="assets/img/banner3.jpg" class="d-block w-100" alt="..."></a>
                                     </div>
                                     
                                     <div class="col-lg-4 col-wrt">
-                                        <a href="#">
+                                        <a href="disgaea.html">
                                             <p class="disc-desc">PRE-PURCHASE AND GET 15% OFF</p>
                                             <h2>Cyberpunk 2077</h2>
                                         <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed [...]</p></a>
-                                        <a class="morebtn" href="#">Learn more <ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
+                                        <a class="morebtn" href="disgaea.html">Learn more <ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
                                     </div>
                                 </div>
                             </div>
@@ -132,10 +136,10 @@
                 
                 <div class="container">
                     <h2 class="section-title">SPECIAL OFFERS</h2>
-                    <div class="row special-offer">
+                    <div class="row special-offer js--special-offer">
                         <div class="col-lg">
                             <div class="row row-img">
-                                <a href="#"><img src="assets/img/starwars.jpg" alt="Star Wars Squadron"></a>
+                                <a href="disgaea.html"><img src="assets/img/starwars.jpg" alt="Star Wars Squadron"></a>
                             </div>
                             <div class="row game-desc">
                                 <h5>STAR WARS&#8482: Squadrons</h5>
@@ -151,7 +155,7 @@
                         </div>
                         <div class="col-lg">
                             <div class="row row-img">
-                                <a href="#"><img src="assets/img/second-ext.jpg" alt="Second Extinction"></a>
+                                <a href="disgaea.html"><img src="assets/img/second-ext.jpg" alt="Second Extinction"></a>
                             </div>
                             <div class="row game-desc">
                                 <h5>Second Extinction&#8482</h5>
@@ -167,7 +171,7 @@
                         </div>
                         <div class="col-lg col-2-item">
                             <div class="row">
-                                <a href="#"><img src="assets/img/phasmo.jpg" alt="Phasmophobia"></a>
+                                <a href="disgaea.html"><img src="assets/img/phasmo.jpg" alt="Phasmophobia"></a>
                             </div>
                             <div class="row game-desc">
                                 <h5>Phasmophobia</h5>
@@ -182,7 +186,7 @@
                             </div>
                             
                             <div class="row">
-                                <a href="#"><img src="assets/img/squad.jpg" alt="Squad"></a>
+                                <a href="disgaea.html"><img src="assets/img/squad.jpg" alt="Squad"></a>
                             </div>
                             <div class="row game-desc">
                                 <h5>Squad</h5>
@@ -203,12 +207,12 @@
                 
                 <div class="container ">
                     <h2 class="section-title title2">FREE FOR YOU</h2>
-                    <div class="row free-games">
+                    <div class="row free-games js--free-game">
                         <div class="col-lg">
                             <h3>VALORANT</h3>
                             <p>VALORANT is your global competitive stage. It’s a 5v5 tac-shooter matchup to plant or defuse the Spike. More than guns and bullets, creativity is your greatest weapon.</p>
                             
-                            <a href="#" role="button">PLAY FREE NOW</a>
+                            <a href="disgaea.html" role="button">PLAY FREE NOW</a>
                         </div>
                         <div class="col-lg text-center">
                             <img src="assets/img/valorant.png" alt="Valorant">
@@ -218,9 +222,9 @@
                 
                 <div class="container">
                     <h2 class="section-title">NEW RELEASE</h2>
-                    <div class="row new-release">
+                    <div class="row new-release js--new-release">
                        <div class="col-lg new-game">
-                             <a href="#"><div class="row row-img">
+                             <a href="disgaea.html"><div class="row row-img">
                                 <img src="assets/img/wwii.jpg">
                             </div>
                             <div class="row game-desc">
@@ -230,7 +234,7 @@
                             </div></a>
                         </div>
                         <div class="col-lg new-game">
-                            <a href="#"><div class="row row-img">
+                            <a href="disgaea.html"><div class="row row-img">
                                 <img src="assets/img/foregone.jpg">
                             </div>
                             <div class="row game-desc">
@@ -240,7 +244,7 @@
                             </div></a>
                         </div>
                         <div class="col-lg new-game">
-                            <a href="#"><div class="row row-img">
+                            <a href="disgaea.html"><div class="row row-img">
                                 <img src="assets/img/ghostrunner.jpg">
 
                             </div>
@@ -251,7 +255,7 @@
                                 </div></a>
                         </div>
                         <div class="col-lg new-game">
-                            <a href="#"><div class="row row-img">
+                            <a href="disgaea.html"><div class="row row-img">
                                 <img src="assets/img/trl.jpg">
                             </div>
                             <div class="row game-desc">
@@ -261,7 +265,7 @@
                             </div></a>
                         </div>
                         <div class="col-lg new-game">
-                            <a href="#"><div class="row row-img">
+                            <a href="disgaea.html"><div class="row row-img">
                                 <img src="assets/img/startup.jpg">
                             </div>
                             <div class="row game-desc">
@@ -275,7 +279,7 @@
                 
                 <div class="container genre-section">
                     <h2 class="section-title">BROWSE GENRE</h2>
-                    <div class="row text-center">
+                    <div class="row text-center js--genre-section">
                         <a class="action" href="action.html"><div class="col-sm">Action</div></a>
                         <a class="adventure" href="adventure.html"><div class="col-sm">Adventure</div></a>
                         <a class="casual" href="casual.html"><div class="col-sm">Casual</div></a>
@@ -291,68 +295,70 @@
                 
                 <div class="container">
                     <h2 class="section-title">MORE FROM VIRTUAL LABS <a href="browse2.html" role="button">View All</a></h2>
-                    <div class="row more-from">
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/fornite.jpg">
-                            </div>
-                            <div class="row game-desc">
-                                <h6>Fortnite</h6>
-                                <p class="publisher">virtual labs</p>
-                                <p class="price">FREE</p>
-                            </div></a>
-                        </div>
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/ascreed.jpeg">
-                            </div>
-                            <div class="row game-desc">
-                                <h6>Assassin's Creed II Deluxe Edition</h6>
-                                <p class="publisher">Ubisoft</p>
-                                <p class="price">$9.49</p>
-                            </div></a>
-                        </div>
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/gta5.jpeg">
-                            </div>
-                            <div class="row game-desc">
-                                <h6>Grand Theft Auto V</h6>
-                                <p class="publisher">Rockstar Games</p>
-                                <p class="price">$24.99</p>
+                    <div class="row js--more-from">
+                        <div class="row more-from">
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/fornite.jpg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>Fortnite</h6>
+                                    <p class="publisher">virtual labs</p>
+                                    <p class="price">FREE</p>
                                 </div></a>
-                        </div>
-                    </div>
-                    <div class="row more-from">
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/apex.jpg">
                             </div>
-                            <div class="row game-desc">
-                                <h6>Apex Legends#8482</h6>
-                                <p class="publisher">Electronic Arts</p>
-                                <p class="price">FREE</p>
-                            </div></a>
-                        </div>
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/nfsheat.jpg">
-                            </div>
-                            <div class="row game-desc">
-                                <h6>Need For Speed&#8482 Heat</h6>
-                                <p class="publisher">Electronic Arts</p>
-                                <p class="price">$59.99</p>
-                            </div></a>
-                        </div>
-                        <div class="col-md more-game">
-                            <a href="#"><div class="row row-img">
-                                <img src="assets/img/fifa.jpg">
-                            </div>
-                            <div class="row game-desc">
-                                <h6>FIFA 21</h6>
-                                <p class="publisher">Electronic Arts</p>
-                                <p class="price">$79.90</p>
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/ascreed.jpeg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>Assassin's Creed II Deluxe Edition</h6>
+                                    <p class="publisher">Ubisoft</p>
+                                    <p class="price">$9.49</p>
                                 </div></a>
+                            </div>
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/gta5.jpeg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>Grand Theft Auto V</h6>
+                                    <p class="publisher">Rockstar Games</p>
+                                    <p class="price">$24.99</p>
+                                    </div></a>
+                            </div>
+                        </div>
+                        <div class="row more-from">
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/apex.jpg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>Apex Legends#8482</h6>
+                                    <p class="publisher">Electronic Arts</p>
+                                    <p class="price">FREE</p>
+                                </div></a>
+                            </div>
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/nfsheat.jpg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>Need For Speed&#8482 Heat</h6>
+                                    <p class="publisher">Electronic Arts</p>
+                                    <p class="price">$59.99</p>
+                                </div></a>
+                            </div>
+                            <div class="col-md more-game">
+                                <a href="disgaea.html"><div class="row row-img">
+                                    <img src="assets/img/fifa.jpg">
+                                </div>
+                                <div class="row game-desc">
+                                    <h6>FIFA 21</h6>
+                                    <p class="publisher">Electronic Arts</p>
+                                    <p class="price">$79.90</p>
+                                    </div></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -361,11 +367,11 @@
         
         <footer class="card-footer text-center">
             <ul class="icon">
-                <li><a href="https://www.facebook.com/"><ion-icon id="facebook" name="logo-facebook"></ion-icon></a></li>
-                <li><a href="https://twitter.com/"><ion-icon id="twitter" name="logo-twitter"></ion-icon></a></li>
-                <li><a href="https://id.pinterest.com/"><ion-icon id="pinterest" name="logo-pinterest"></ion-icon></a></li>
-                <li><a href="https://www.youtube.com/"><ion-icon id="youtube" name="logo-youtube"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/"><ion-icon id="instagram" name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><ion-icon id="facebook" name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><ion-icon id="twitter" name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://id.pinterest.com/" target="_blank"><ion-icon id="pinterest" name="logo-pinterest"></ion-icon></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><ion-icon id="youtube" name="logo-youtube"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><ion-icon id="instagram" name="logo-instagram"></ion-icon></a></li>
             </ul>
             
             <ul>
@@ -385,5 +391,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
