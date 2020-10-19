@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="assets/img/logo_transparent.png" />
+        <title>Virtual Labs &mdash; Technology at the Speed of Life.</title>
+        
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/game.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="user-select-none navbar navbar-expand-md navbar-dark navbar-override">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo_transparent.png" height="30" width="30" class="d-inline-block align-top" style="margin-right: 10px; ">VIRTUAL LABS
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle dropbtn" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">STORE</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="index.html">Home</a>
+                                    <a class="dropdown-item" href="browse2.html">Browse</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="news&event.html">NEWS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                        </ul>
+                        
+                        <ul class="navbar-nav nav-2">
+                            <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: 0;"><ion-icon name="search-outline"></ion-icon></button>
+                                <div class="dropdown-menu">
+                                    <form class="search" action="browse2.html">
+                                        <input type="text" class="dropdown-item" placeholder="Search">
+                                        <button type="submit" class="searchBtn"><ion-icon name="search-outline"></ion-icon></button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item" >
+                                <a class="nav-link" href="login.html"><ion-icon name="cart-outline"></ion-icon></a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: 0;"><ion-icon name="person-outline"></ion-icon></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="login.html">SIGN IN</a>
+                                    <a class="dropdown-item" href="signup.html">REGISTER</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+        
+        <main>
+            <div class="container-fluid">
+                <div class="container">
+                    <!-- backButton -->
+                    <div class="row row-back backButton">
+                        <div class="col">
+                            <a href="index.html"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Store</a> <span class="border-dash">&mdash;</span> Disgaea 3: Absence of Justice
+                        </div>
+                    </div>
+                    
+                    <!-- title -->
+                    <h1 id="title" class="display-3">The Witcher 3: Wild Hunt</h1>
+
+                    <!-- carousel -->
+                    <div id="carouselHead" class="carousel slide carousel-fade carousel-multi" data-ride="carousel">
+                        <ol class="carousel-indicators">
+
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/the witcher/1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/the witcher/2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/the witcher/3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/the witcher/4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselHead" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselHead" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+                      <!-- gameplay -->
+                      <div class="media js--gameplay">
+                        <img src="assets/img/the witcher/icon.jpg" class="align-self-center mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0">Gameplay</h5>
+                          <p>As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+                          
+                        </div>
+                      </div>
+
+
+                      <!-- buy -->
+                      <div class="buyDiv text-center row">
+                        <div class="col-md">
+                            <div class="row text-center">
+                                <div class="col-md price">
+                                    <p>$9.99</p>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <button class="btn-group btn-group-toggle btn-light btn-outline-dark tombol"><a href="login.html">BUY NOW</a></button>
+                                <button class="btn-group btn-group-toggle btn-light btn-outline-dark tombol wishlist"><a href="login.html"><ion-icon name="heart-outline"></ion-icon></a></button>
+                            </div>
+                          </div>
+                      </div>
+ 
+                      <!-- about game -->
+                      <div class="row box js--about">
+                          <div class="col-md-4 about">
+                              <h1 class="display-5">About Game</h1>
+                          </div>
+                          <div class="col-xl-8">
+                              <div class="row">
+                                  <div class="col-md">
+                                      <h4>Developer</h4>
+                                      <p>CD PROJEKT RED</p>
+                                  </div>
+                                  <div class="col-md">
+                                    <h4>Publisher</h4>
+                                    <p>CD PROJEKT S.A.</p>
+                                </div>
+                                <div class="col-md">
+                                    <h4>Available</h4>
+                                    <p>May 13, 2015</p>
+                                </div>
+
+                              </div>
+                              <div class="row">
+                                <div class="col-md">
+                                    <h4>Tags</h4>
+                                    <p>Open World, RPG, Adventure</p>
+                                </div>
+                                <div class="col-md">
+                                  <h4>Rating</h4>
+                                  <p>5.0</p>
+                              </div>
+                              <div class="col-md">
+                                  <h4>Platform</h4>
+                                  <p>Windows</p>
+                              </div>
+                                  
+                            </div>
+                            <div class="row">
+                                  <h3 id="gamedesc">The Witcher 3: Wild Hunt</h3>
+                                  <p>Become a professional monster slayer and embark on an adventure of epic proportions! Upon its release, The Witcher 3: Wild Hunt became an instant classic, claiming over 250 Game of the Year awards. Now you can enjoy this huge, over 100-hour long, open-world adventure along with both its story-driven expansions worth an extra 50 hours of gameplay. This edition includes all additional content - new weapons, armor, companion outfits, new game mode and side quests.</p>
+                                  <p class="mb-0">Trained from early childhood and mutated to have superhuman skills, strength, and reflexes, witchers are a socially ostracized counterbalance to the monster-infested world in which they live.</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!-- specifications -->
+                      <div class="row box js--specs">
+                        <div class="col-md-4 specs">
+                            <h1 class="display-5 ">Specifications</h1>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="row">
+                                
+                                <div class="col">
+                                    <h4>Minimum</h4>
+
+                                    <h5 class="separate">OS</h5>
+                                    <p>Windows 7 or later</p>
+
+                                    <h5>Processor</h5>
+                                    <p>Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940</p>
+
+                                    <h5>Memory</h5>
+                                    <p>6GB</p>
+
+                                    <h5>Graphics</h5>
+                                    <p>Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870</p>
+                                </div>
+                                <div class="col">
+                                    <h4>Recommended</h4>
+
+                                    <h5 class="separate">OS</h5>
+                                    <p>64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10</p>
+
+                                    <h5>Processor</h5>
+                                    <p>Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz</p>
+
+                                    <h5>Memory</h5>
+                                    <p>8GB</p>
+
+                                    <h5>Graphics</h5>
+                                    <p>Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290</p>
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+                      <!-- recommended -->
+                        <h2 class="section-title">RECOMMENDED GAMES</h2>
+                        <div class="row special-offer js--rec">
+                            <div class="col-md">
+                                <div class="row row-img">
+                                    <a href="disgaea.html"><img src="assets/img/disgaea/4.jpg"></a>
+                                </div>
+                                <div class="row game-desc">
+                                    <h5>Disgaea 3: Absence of Justice</h5>
+                                    <p>Offer ends 27 Oct @12.00am.</p>
+                                    <div class="row price">
+                                        <div class="col-3 disc-percentage">-50%</div>
+                                        <div class="col-3 real-price">
+                                            <div class="row from-price">$19.99</div>
+                                            <div class="row to-price">$9.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="row row-img">
+                                    <a href="monster hunter.html"><img src="assets/img/monster hunter/icon.jpg"></a>
+                                </div>
+                                <div class="row game-desc">
+                                    <h5>Monster Hunter: World</h5>
+                                    <p>Offer ends 27 Oct @12.00am.</p>
+                                    <div class="row price">
+                                        <div class="col-3 disc-percentage">-50%</div>
+                                        <div class="col-3 real-price">
+                                            <div class="row from-price">$24.99</div>
+                                            <div class="row to-price">$12.49</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="row row-img">
+                                    <a href="foregone.html"><img src="assets/img/foregone/1.jpg"></a>
+                                </div>
+                                <div class="row game-desc">
+                                    <h5>Foregone</h5>
+                                    <p>Offer ends 27 Oct @12.00am.</p>
+                                    <div class="row price">
+                                        <div class="col-3 disc-percentage">-50%</div>
+                                        <div class="col-3 real-price">
+                                            <div class="row from-price">$24.99</div>
+                                            <div class="row to-price">$12.49</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                </div>
+            </div>
+            
+        </main>
+        
+
+        <footer class="card-footer text-center">
+            <ul class="icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><ion-icon id="facebook" name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><ion-icon id="twitter" name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://id.pinterest.com/" target="_blank"><ion-icon id="pinterest" name="logo-pinterest"></ion-icon></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><ion-icon id="youtube" name="logo-youtube"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><ion-icon id="instagram" name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            
+            <ul>
+                <li><a href="contact.html">Customer Care</a><span> &#124;</span></li>
+                <li><a href="contact.html">Contact Us</a><span> &#124;</span></li>
+                <li><a href="terms.html">Terms of Services</a><span> &#124;</span></li>
+                <li><a href="policy.html">Privacy Policy</a><span> &#124;</span></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            
+            <p class="copyright">&#169; 2020 Virtual Labs, All Rights Reserved.</p>
+            <p class="footer-desc">Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement (updated 1/1/20) and Privacy Policy and Cookie Statement (updated 1/1/20). Your California Privacy Rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices.</p>
+        </footer>
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

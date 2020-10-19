@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <link rel="shortcut icon" href="assets/img/logo_transparent.png" />
+    <title>Virtual Labs &mdash; Technology at the Speed of Life.</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <script type="text/javascript">
+        
+        function sortUnorderedList(ul, sortDescending) {
+          if(typeof ul == "string")
+            ul = document.getElementById(ul);
+
+          var lis = ul.getElementsByTagName("LI");
+          var vals = [];
+
+          for(var i = 0, l = lis.length; i < l; i++)
+            vals.push(lis[i].innerHTML);
+            vals.sort();
+
+
+          for(var i = 0, l = lis.length; i < l; i++)
+            lis[i].innerHTML= vals[i];
+        }
+        
+        window.onload = function() {
+          var desc = false;
+          document.getElementById("test").onclick = function() {
+            sortUnorderedList("list", desc);
+            desc = !desc;
+            return false;
+          }
+        
+        }
+        </script>
+         <style>
+            input[type=button]  {
+                margin-bottom: 10px;
+                background-color: Transparent;
+                border: none;
+                outline: none;
+            }
+    
+            .lele {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+            }
+    
+            a {
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #6b6ba5;
+                transition: color 0.2s;
+            }
+
+            .col-2 ul {
+                list-style-type: none;
+            }
+
+            .col-2 ul li {
+                margin-top: 25px;
+            }
+    
+            .game-desc {
+                display: block;
+                padding: 15px 20px 0 15px;
+                background-color: #f7f7f7;
+                color: black;
+                margin-bottom: 10;
+            }
+    
+            .publisher {
+                font-size: 12px;
+                margin-top: -6px;
+                margin-bottom: 8px;
+            }
+    
+            .price {
+                font-size: 18px;
+                color: orange;
+                bottom: 0;
+            }
+    
+            .new-game:hover {
+                box-shadow: 0 0 10px 3px #ff0000;
+                transition: box-shadow 0.3s;
+            }
+    
+            .new-game {
+                margin-right: 10px;
+            }
+    
+            .new-game img {
+                width: 220px;
+                height: 250px;
+                object-fit: cover;
+            }
+    
+            .new-game h4 {
+                font-size: 15px;
+            }
+    
+            .disc-percentage {
+                background-color: #46b446;
+                font-size: 25px;
+                padding: 0 10px;
+    
+            }
+    
+            .real-price {
+                background-color: #4d5964;
+                left: -160px;
+            }
+    
+            .from-price {
+                text-decoration: line-through;
+                font-size: 12px;
+                padding: 0 10px;
+            }
+    
+            .to-price {
+                font-size: 14px;
+                padding: 0 10px;
+                color: orange;
+            }
+            .diskon{
+                display: flex;
+                padding-bottom: 4px;
+            }
+            .game-descc {
+                display: block;
+                padding: 1px 20px 0 15px;
+                background-color: #f7f7f7;
+                color: black;
+                margin-bottom: 10px;
+            }
+             
+             .nav-2 li .nav-link {
+                 margin: 0;
+                 padding: 0;
+                 margin-top: 10px;
+             }
+                    .navbar-override {
+           padding-top: 5px;
+           padding-bottom: 5px;
+           padding-left: 30px;
+       }
+       
+       .navbar-brand {
+           margin-right: -10px;
+       }
+       
+       .navbar-override ul li {
+            margin: 5px;
+            font-size: 130%;
+       }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav class="user-select-none navbar navbar-expand-md navbar-dark navbar-override">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo_transparent.png" height="30" width="30" class="d-inline-block align-top"
+                        style="margin-right: 10px; ">VIRTUAL LABS
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" data-toggle="dropdown" href="index.html"
+                                role="button" aria-haspopup="true" aria-expanded="false">STORE</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="browse2.html">Browse</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news&event.html">NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav nav-2">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="background-color: transparent; border: 0;">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                            <div class="dropdown-menu">
+                                <form class="search" action="browse2.html">
+                                    <input type="text" class="dropdown-item" placeholder="Search">
+                                    <button type="submit" class="searchBtn">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="background-color: transparent; border: 0;">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="login.html">SIGN IN</a>
+                                <a class="dropdown-item" href="signup.html">REGISTER</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <h1>Browsing FPS</h1>
+        <a href="index.html" style="color: #6767d1; margin-right: 10px;">Home</a>
+        <a href="browse2.html" style="color: #6767d1; margin-right: 20px;">Back</a><br>
+        <input type="button" id="test" value="Sort By : A-Z"/>
+        <div class="row">
+            <div class="col-10">
+            <ul class="lele" id="list">
+                <li>
+                    <div class="new-game">
+                        <a href="https://www.google.co.id/">
+                            <img src="assets/img2/valorant.jpg">
+                            <div class="game-desc">
+                                <h4>Valorant</h4>
+                                <p class="publisher">Riot Games</p>
+                                <p class="price">$1.99</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="new-game">
+                        <a href="https://www.google.co.id/">
+                            <img src="assets/img2/cyberpunk.jpg">
+                            <div class="game-desc">
+                                <h4>Cyberpunk 2077</h4>
+                                <p class="publisher">CD PROJEKT RED</p>
+                                <p class="price">FREE</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="new-game">
+                        <a href="https://www.google.co.id/">
+                            <img src="assets/img2/squad.jpg">
+                            <div class="game-descc">
+                                <h4>Squad</h4>
+                                <p class="publisher">Offworld Industries</p>
+                                <div class="diskon">
+                                <div class="disc-percentage">-30%</div>
+                                <div class="real-price">
+                                    <div class="from-price">$24.99</div>
+                                    <div class="to-price">$17.49</div>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="new-game">
+                        <a href="https://www.google.co.id/">
+                            <img src="assets/img2/heroes.jpg">
+                            <div class="game-desc">
+                                <h4>Heroes & Generals</h4>
+                                <p class="publisher">RETO MOTO</p>
+                                <p class="price">$1.99</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <div class="col-2">
+                <h2>Filter</h2>
+                    <ul>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="rpg.html">RPG</a></li>
+                        <li><a href="fps.html">FPS</a></li>
+                        <li><a href="simulation.html">Simulation</a></li>
+                        <li><a href="casual.html">Casual</a></li>
+                        <li><a href="horror.html">Horror</a></li>
+                        <li><a href="adventure.html">Adventure</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                        <li><a href="racing.html">Racing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="card-footer text-center">
+        <ul class="icon">
+            <li><a href="https://www.facebook.com/"><ion-icon id="facebook" name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://twitter.com/"><ion-icon id="twitter" name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://id.pinterest.com/"><ion-icon id="pinterest" name="logo-pinterest"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/"><ion-icon id="youtube" name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/"><ion-icon id="instagram" name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="contact.html">Customer Care</a><span> &#124;</span></li>
+            <li><a href="contact.html">Contact Us</a><span> &#124;</span></li>
+            <li><a href="terms.html">Terms of Services</a><span> &#124;</span></li>
+            <li><a href="policy.html">Privacy Policy</a><span> &#124;</span></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        
+        <p class="copyright">&#169; 2020 Virtual Labs, All Rights Reserved.</p>
+        <p class="footer-desc">Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement (updated 1/1/20) and Privacy Policy and Cookie Statement (updated 1/1/20). Your California Privacy Rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices.</p>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
