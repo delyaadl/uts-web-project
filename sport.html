@@ -12,168 +12,18 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/script2.js"></script>
 
 
 
     <!-- CSS only -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/media.css">
 
-    <script type="text/javascript">
-        
-        function sortUnorderedList(ul, sortDescending) {
-          if(typeof ul == "string")
-            ul = document.getElementById(ul);
-
-          var lis = ul.getElementsByTagName("LI");
-          var vals = [];
-
-          for(var i = 0, l = lis.length; i < l; i++)
-            vals.push(lis[i].innerHTML);
-            vals.sort();
-
-
-          for(var i = 0, l = lis.length; i < l; i++)
-            lis[i].innerHTML= vals[i];
-        }
-        
-        window.onload = function() {
-          var desc = false;
-          document.getElementById("test").onclick = function() {
-            sortUnorderedList("list", desc);
-            desc = !desc;
-            return false;
-          }
-        
-        }
-        </script>
-         <style>
-            input[type=button]  {
-                margin-bottom: 10px;
-                background-color: Transparent;
-                border: none;
-                outline: none;
-            }
     
-            .lele {
-                display: flex;
-                flex-wrap: wrap;
-                list-style-type: none;
-            }
-    
-            a {
-                color: black;
-            }
-
-            a:hover {
-                text-decoration: none;
-                color: #6b6ba5;
-                transition: color 0.2s;
-            }
-
-            .col-2 ul {
-                list-style-type: none;
-            }
-
-            .col-2 ul li {
-                margin-top: 25px;
-            }
-             
-            .game-desc {
-                display: block;
-                padding: 15px 20px 0 15px;
-                background-color: #f7f7f7;
-                color: black;
-                margin-bottom: 10;
-            }
-    
-            .publisher {
-                font-size: 12px;
-                margin-top: -6px;
-                margin-bottom: 8px;
-            }
-    
-            .price {
-                font-size: 18px;
-                color: orange;
-                bottom: 0;
-            }
-    
-            .new-game:hover {
-                box-shadow: 0 0 10px 3px #ff0000;
-                transition: box-shadow 0.3s;
-            }
-    
-            .new-game {
-                margin-right: 10px;
-            }
-    
-            .new-game img {
-                width: 220px;
-                height: 250px;
-                object-fit: cover;
-            }
-    
-            .new-game h4 {
-                font-size: 15px;
-            }
-    
-            .disc-percentage {
-                background-color: #46b446;
-                font-size: 25px;
-                padding: 0 10px;
-    
-            }
-    
-            .real-price {
-                background-color: #4d5964;
-                left: -160px;
-            }
-    
-            .from-price {
-                text-decoration: line-through;
-                font-size: 12px;
-                padding: 0 10px;
-            }
-    
-            .to-price {
-                font-size: 14px;
-                padding: 0 10px;
-                color: orange;
-            }
-            .diskon{
-                display: flex;
-                padding-bottom: 4px;
-            }
-            .game-descc {
-                display: block;
-                padding: 1px 20px 0 15px;
-                background-color: #f7f7f7;
-                color: black;
-                margin-bottom: 10px;
-            }
-             
-             .nav-2 li .nav-link {
-                 margin: 0;
-                 padding: 0;
-                 margin-top: 10px;
-             }
-        </style>
 </head>
 
 <body>
@@ -304,16 +154,16 @@
             <div class="col-2">
                 <h2>Filter</h2>
                 <ul>
-                        <li><a href="action.html">Action</a></li>
-                        <li><a href="rpg.html">RPG</a></li>
-                        <li><a href="fps.html">FPS</a></li>
-                        <li><a href="simulation.html">Simulation</a></li>
-                        <li><a href="casual.html">Casual</a></li>
-                        <li><a href="horror.html">Horror</a></li>
-                        <li><a href="adventure.html">Adventure</a></li>
-                        <li><a href="sport.html">Sport</a></li>
-                        <li><a href="strategy.html">Strategy</a></li>
-                        <li><a href="racing.html">Racing</a></li>
+                    <li class="filter"><a href="action.html">Action</a></li>
+                    <li class="filter"><a href="rpg.html">RPG</a></li>
+                    <li class="filter"><a href="fps.html">FPS</a></li>
+                    <li class="filter"><a href="simulation.html">Simulation</a></li>
+                    <li class="filter"><a href="casual.html">Casual</a></li>
+                    <li class="filter"><a href="horror.html">Horror</a></li>
+                    <li class="filter"><a href="adventure.html">Adventure</a></li>
+                    <li class="filter"><a href="sport.html">Sport</a></li>
+                    <li class="filter"><a href="strategy.html">Strategy</a></li>
+                    <li class="filter"><a href="racing.html">Racing</a></li>
                     </ul>
             </div>
         </div>
